@@ -106,7 +106,7 @@ exports.addGenre=({name})=>{
         throw new Error("Name of the genre should be specified");
     }
     else{
-        return new axios.post(url+'genres', {name}).then(res=>res.data);
+        return new axios.post(url+'genre', {name}).then(res=>res.data);
     }
 }
 
@@ -115,7 +115,7 @@ exports.getGenre=({id})=>{
         throw new Error("Id of the genre not specified");
     }
     else{
-        return axios.get(url+`books/${id}`)
+        return axios.get(url+`genre/${id}`)
     }
 }
 
@@ -124,7 +124,7 @@ exports.deleteGenre=({id})=>{
         throw new Error("ID of the Genre to delete is not specified");
     }
     else{
-        return new axios.delete(url+`genres/${id}`).then(res=>res.data);
+        return new axios.delete(url+`genre/${id}`).then(res=>res.data);
     }
 }
 
@@ -136,6 +136,6 @@ exports.updateGenre=({id, name})=>{
         throw new Error("Name of the Genre to update is not specified");
     }
     else{
-        return new axios.patch(url+`genres/${id}`).then(res=>res.data);
+        return new axios.patch(url+`genre/${id}`).then(res=>res.data);
     }
 }
