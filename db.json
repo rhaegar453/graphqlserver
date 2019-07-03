@@ -1,0 +1,58 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "A Song of Ice and Fire",
+      "authorid": 1,
+      "genreid": 1
+    },
+    {
+      "id": 2,
+      "name": "A Clash of Kings",
+      "authorid": 1,
+      "genreid": 1
+    },
+    {
+      "id": 3,
+      "name": "The Da Vinci Code",
+      "authorid": 2,
+      "genreid": 2
+    },
+    {
+      "name": "A Knight of Seven Kingdoms",
+      "authorid": 1,
+      "genreid": 1,
+      "id": 4
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "G.R.R Martin",
+      "age": 72,
+      "country": "England"
+    },
+    {
+      "id": 2,
+      "name": "Dan Brown",
+      "age": 58,
+      "country": "England"
+    },
+    {
+      "name": "Ciara Price",
+      "age": 24,
+      "country": "USA",
+      "id": 3
+    }
+  ],
+  "genre": [
+    {
+      "id": 1,
+      "name": "Fantasy"
+    },
+    {
+      "id": 2,
+      "name": "Fiction"
+    }
+  ]
+}
